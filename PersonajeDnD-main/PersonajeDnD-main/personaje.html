@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icono.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./personaje.css">
+    <title>Personaje</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+
+            <h1 class="tit">Personaje D&D</h1>
+
+            <div class="button">
+
+                <button class="switch" id="switch">
+                    <span><i class="fas fa-moon"></i></span>
+                    <span><i class="fas fa-sun"></i></span>
+                </button>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <section>
+            <form id="form" class="form">
+                <div class="input">
+                    <input class="forminput" placeholder="Nombre de Personaje" id="name">
+                    <input type="number" class="forminput" placeholder="Edad" id="edad">
+                    <select class="forminput select1" id="raza">
+                        <option value="Humano">Humano</option>
+                        <option value="Semi Elfo">Semi Elfo</option>
+                        <option value="Elfo">Elfo</option>
+                        <option value="Semi Orco">Semi Orco</option>
+                        <option value="Enano">Enano</option>
+                        <option value="Tiefling">Tiefling</option>
+                        <option value="Draconiano">Draconiano</option>
+                        <option value="Gnomo">Gnomo</option>
+                        <option value="Mediano">Mediano</option>
+                    </select>
+                    <select class="forminput select2" id="clase">
+                        <option value="Bardo">Bardo</option>
+                        <option value="Bárbaro">Bárbaro</option>
+                        <option value="Brujo">Brujo</option>
+                        <option value="Clérigo">Clérigo</option>
+                        <option value="Druida">Druida</option>
+                        <option value="Explorador">Explorador</option>
+                        <option value="Guerrero">Guerrero</option>
+                        <option value="Hechicero">Hechicero</option>
+                        <option value="Mago">Mago</option>
+                        <option value="Monje">Monje</option>
+                        <option value="Paladín">Paladín</option>
+                        <option value="Pícaro">Pícaro</option>
+                    </select>
+                    <select class="forminput select2" id="sexo">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+                    <input type="number" class="forminput" placeholder="Altura en Centimetros" name="" id="altura">
+                </div>
+                <div>
+                    <button class="crear" id="btn">Crear</button>
+                </div>
+            </form>
+            <div class="info" id="info">
+            </div>
+            <p id="answer"></p>
+        </section>
+        
+    </main>
+    <footer>
+        <nav>
+            <a href="../../index.html" target="_self" rel="noopener noreferrer">Volver</a>
+            <a href="../../DadosHtml-main/DadosHtml-main/dados.html" target="_self" rel="noopener noreferrer">Dados</a>
+        </nav>
+        <p class="name">© Pablo Moore 2023</p>
+    </footer>
+    <script src="./personaje.js"></script>
+</body>
+</html>

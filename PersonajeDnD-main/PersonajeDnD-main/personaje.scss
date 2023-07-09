@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Noto+Sans:wght@600&family=Secular+One&display=swap');
+
+$darkgreen: #005a23;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Secular One', sans-serif;
+    color: beige;
+}
+p{
+    color: $darkgreen;
+    padding: 20px;
+    text-align: center;
+}
+body{
+    background-color: $darkgreen;
+}
+
+
+header{
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $darkgreen;
+}
+.header{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    position: relative;
+
+    .button{
+   
+
+        .switch{
+            // margin-right: 20px;
+            margin-top: 20px;
+            background: #343d5b;
+            border-radius: 1000px;
+            border: none;
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            outline: none;
+
+
+            &::after{
+                content: "";
+                display: block;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                background: #F1F1F1;
+                top: 9%;
+                right: 5%;
+                left: unset;
+                border-radius: 100px;
+                transition: 0.3s ease all;
+                box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+            }
+            &.active{
+                background: orange;
+                color: #000;
+                &::after{
+                    left: 5%;
+                    right: unset;
+                }
+            }
+        
+            span{
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                display: block;
+                font-size: 20px;
+                align-self: center;
+                padding-top: 1.5px;
+                background: none;
+                color: #fff;
+                i{
+                    background: none;
+                }
+            }
+        }
+
+    }
+
+}
+main{
+    background-color: $darkgreen;
+    padding: 30px;
+    position: relative;
+}
+
+section{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    background-color: beige;
+    position:relative;
+    
+    .info{
+        width: 300px;
+        p{
+            color: #F1F1F1;
+        }
+
+    }
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+form div{
+    display: flex;
+    margin: 5px;
+    padding: 20px;
+    justify-content: center;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+input, select{
+    color: $darkgreen !important;
+    background-color: beige !important;
+    width: 300px;
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+}
+option{
+    color: $darkgreen;
+}
+button{
+    align-self: center;
+    background-color: beige;
+    padding: 15px;
+    border: 2px;
+    border-color: $darkgreen;
+    height: 49px;
+    border-radius: 0.5rem;
+    border-style: solid;
+    color: $darkgreen;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover{
+    background-color: $darkgreen;
+    color: beige;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    background-color: $darkgreen;
+    align-items: center;
+    justify-content: center;
+    a{
+        color: #F1F1F1;
+        text-decoration: none;
+        margin: 30px;
+        &:hover{
+            color: #138736;
+        }
+    }
+    .name{
+        color: #F1F1F1;
+    }
+
+}
+@media (max-width: 608px){
+    header{
+        font-size: 25px;
+    }
+    
+    p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 395px) {
+    header{
+        font-size: 22px;
+    }
+
+    
+    .forminput {
+        width: 200px ;
+    }
+
+    
+    
+}
+@media (max-height: 600px){
+    section img{
+        width: 150px;
+    }
+
+}
+@media (max-height: 506px){
+    section img{
+        width: 100px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
+.dark{
+    main{
+        section{
+            background-color: #138736;
+            #answer{
+                color: whitesmoke;
+            }
+        }
+    }
+}
