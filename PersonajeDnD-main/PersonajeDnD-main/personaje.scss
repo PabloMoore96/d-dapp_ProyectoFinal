@@ -113,7 +113,7 @@ section{
     .info{
         width: 300px;
         p{
-            color: #F1F1F1;
+            color: $darkgreen;
         }
 
     }
@@ -226,7 +226,14 @@ footer{
 .dark{
     main{
         section{
+
             background-color: #138736;
+            .info{
+                p{
+                    color: #F1F1F1;
+                }
+        
+            }
             #answer{
                 color: whitesmoke;
             }

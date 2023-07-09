@@ -101,7 +101,7 @@ section .info {
   width: 300px;
 }
 section .info p {
-  color: #F1F1F1;
+  color: #005a23;
 }
 
 form {
@@ -207,6 +207,9 @@ footer .name {
 }
 .dark main section {
   background-color: #138736;
+}
+.dark main section .info p {
+  color: #F1F1F1;
 }
 .dark main section #answer {
   color: whitesmoke;
